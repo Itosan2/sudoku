@@ -529,7 +529,7 @@ nav {
   :root {
     --nav-size: 40px;
 
-    --sudoku-cell-size: 48px;
+    --sudoku-cell-size: 46px;
 
     --border-radius: 5px;
 
@@ -586,12 +586,6 @@ nav {
   }
 
   .main-game-info.active {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    display: block;
-    gap: 10px; */
     color: var(--blue);
 
     background-color: rgba(42, 42, 56, 0.9);
@@ -600,6 +594,10 @@ nav {
     padding: 20px;
     transform: translate(-50%, -50%);
     transition: transform ease 0.8s;
+  }
+
+  .main-game-info-box {
+    color: var(--blue);
   }
 
   .number {
