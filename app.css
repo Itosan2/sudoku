@@ -440,11 +440,11 @@ nav {
   }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 850px) {
   :root {
     --nav-size: 50px;
 
-    --sudoku-cell-size: 38px;
+    --sudoku-cell-size: 50px;
 
     --border-radius: 5px;
 
@@ -483,6 +483,7 @@ nav {
     margin: 5px auto;
   }
   .main-game-info-box {
+    display: none;
     height: 40px;
   }
   .number {
@@ -494,6 +495,6 @@ nav {
   }
 
   .main {
-    height: 100vh;
+    margin-top: 20px;
   }
 }
