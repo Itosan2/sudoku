@@ -529,7 +529,7 @@ nav {
   :root {
     --nav-size: 40px;
 
-    --sudoku-cell-size: 50px;
+    --sudoku-cell-size: 48px;
 
     --border-radius: 5px;
 
