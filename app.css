@@ -11,7 +11,7 @@
   --black: #000;
 
   --nav-size: 70px;
-  --sudoku-cell-size: 50px;
+  --sudoku-cell-size: 52px;
   --hb-width: 22px;
   --hb-height: calc(var(--hb-width) / 8);
 
@@ -212,7 +212,7 @@ nav {
 
 .main {
   /* height: 100vh; */
-  padding-top: var(--nav-size);
+  padding-top: calc(var(--nav-size) + 10px);
   display: grid;
   place-items: center;
 }
@@ -448,7 +448,7 @@ nav {
 
 .pause-screen,
 .result-screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -458,6 +458,10 @@ nav {
   justify-content: center;
   flex-direction: column;
   display: none;
+}
+
+.pause-screen > h2 {
+  color: var(--blue);
 }
 
 .pause-screen.active,
@@ -568,10 +572,12 @@ nav {
   .main-grid-cell.hover {
     border-width: 2px;
   }
+
   .main-game-info-wrapper {
+    margin-top: 20px;
     margin-left: 0;
-    margin-top: 5px;
   }
+
   .main-game-info {
     position: absolute;
     top: 50%;
@@ -587,10 +593,8 @@ nav {
 
   .main-game-info.active {
     color: var(--blue);
-
     background-color: rgba(42, 42, 56, 0.9);
     box-shadow: 2px 2px 2px rgba(42, 42, 56, 0.5);
-
     padding: 20px;
     transform: translate(-50%, -50%);
     transition: transform ease 0.8s;
